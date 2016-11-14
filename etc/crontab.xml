@@ -1,0 +1,7 @@
+<config>
+    <group id="default">
+        <job name="shopify_export_cron" instance="W3D\ExportShopify\Cron\ShopifyProductsToDb" method="storeToDb">
+            <schedule>0 3 * * *</schedule>
+        </job>
+    </group>
+</config>
