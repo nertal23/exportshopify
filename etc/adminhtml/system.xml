@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Config/etc/system_file.xsd">
+    <system>
+        <tab id="w3d" translate="label" sortOrder="10">
+            <label>W3D</label>
+        </tab>
+ 
+        <section id="w3d_exportshopify" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>W3D Export Shopify Products</label>
+            <tab>w3d</tab>
+            <resource>W3D_ExportShopify::w3d_exportshopify</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General</label>
+                <field id="api_key" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Api Key</label>
+                </field>
+                <field id="secret" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Secret</label>
+                </field>
+                
+                <field id="shop_url" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Shopify shop admin url</label>
+                    <comment>
+                        Example: myshop.myshopify.com/admin/
+                    </comment>
+                </field>
+            </group>
+        </section>
+ 
+    </system>
+</config>
