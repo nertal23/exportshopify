@@ -1,0 +1,10 @@
+{
+  "name": "w3d/exportshopify",
+  "description": "A Magento 2 module that exports simple products from a shopify shop",
+  "type": "magento2-module",
+  "version": "0.0.1",
+   
+  "autoload": {
+    "files": [ "registration.php" ]
+  }
+}
